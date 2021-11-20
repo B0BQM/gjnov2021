@@ -23,7 +23,7 @@ public class PlayerControls : MonoBehaviour
         {
             if (grounded)
             {
-                GetComponent<Rigidbody>().velocity = new Vector2(GetComponent<Rigidbody>().velocity.x, movUp);
+                GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, movUp);
             }
         }
 
@@ -39,7 +39,7 @@ public class PlayerControls : MonoBehaviour
             movVelocity = movSpeed;
         }
 
-        GetComponent<Rigidbody>().velocity = new Vector2(movVelocity, GetComponent<Rigidbody>().velocity.y);
+        GetComponent<Rigidbody2D>().velocity = new Vector2(movVelocity, GetComponent<Rigidbody2D>().velocity.y);
 
     }
     //Check if Grounded
